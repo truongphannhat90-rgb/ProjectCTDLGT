@@ -9,7 +9,7 @@ void addLicensePlate(ManageLicensePlate& m)
 {
     if (m.count >= MAX_PLATES)
     {
-        cout << "Danh sach da day!\n";
+        cout << "Danh sach da day!" << endl;
         return;
     }
 
@@ -18,14 +18,14 @@ void addLicensePlate(ManageLicensePlate& m)
     cout << "Nhap ID: ";
     cin >> lp.id;
 
-    cout << "Nhap ma tinh (provinceCode): ";
+    cout << "Nhap ma tinh: ";
     cin >> lp.provinceCode;
 
-    cout << "Nhap ma phuong (wardCode): ";
+    cout << "Nhap ma phuong: ";
     cin >> lp.wardCode;
 
     m.count++;
-    cout << "Them bien so thanh cong!\n";
+    cout << "Them bien so thanh cong!" << endl;
 }
 
 void printLicensePlate(const ManageLicensePlate& m)
